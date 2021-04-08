@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DOx-xo-DG6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DZ10_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AB8-Aj-tfd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nNI-4o-1cu" appends="YES" id="A9w-gK-pfS"/>
+                                    <outletCollection property="gestureRecognizers" destination="3XO-ok-i0i" appends="YES" id="t48-G1-tqj"/>
+                                    <outletCollection property="gestureRecognizers" destination="eDG-94-bAJ" appends="YES" id="8OE-Ze-gCj"/>
+                                    <outletCollection property="gestureRecognizers" destination="OjO-1B-Z4h" appends="YES" id="VoY-B0-zrF"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="AB8-Aj-tfd" secondAttribute="bottom" id="8b7-7U-kYy"/>
+                            <constraint firstItem="AB8-Aj-tfd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="d0b-gl-5aJ"/>
+                            <constraint firstItem="AB8-Aj-tfd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dJS-88-Ma0"/>
+                            <constraint firstItem="AB8-Aj-tfd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xLY-FF-QzK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i6w-9f-rXF"/>
+                    <connections>
+                        <outlet property="touchView" destination="AB8-Aj-tfd" id="dkF-tO-gM4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="nNI-4o-1cu">
+                    <connections>
+                        <action selector="rightSwipe:" destination="BYZ-38-t0r" id="KtH-96-bK3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="3XO-ok-i0i">
+                    <connections>
+                        <action selector="leftSwipee:" destination="BYZ-38-t0r" id="YgJ-du-rgr"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="eDG-94-bAJ">
+                    <connections>
+                        <action selector="downSwipe:" destination="BYZ-38-t0r" id="arj-2B-zFI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="OjO-1B-Z4h">
+                    <connections>
+                        <action selector="upSwipe:" destination="BYZ-38-t0r" id="CgJ-mm-JQT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="609" y="58"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3f7-hR-BAa">
+            <objects>
+                <navigationController id="DOx-xo-DG6" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hqF-yy-dUJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4Oa-od-kBg" kind="relationship" relationship="rootViewController" id="JKh-Yb-Xd1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oho-q4-yfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="58"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sC3-sO-Hi2">
+            <objects>
+                <viewController id="4Oa-od-kBg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ug0-dI-pRx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H05-5V-Uwy">
+                                <rect key="frame" x="149" y="410" width="116" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="k9Z-Pq-j9v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jgp-mO-eg1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R9R-GT-RvW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8k-Ka-cme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163.768115942029" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
